@@ -20,4 +20,7 @@ app.get('/tasks', authenticateToken, taskController.getTasks);
 app.post('/notes', authenticateToken, noteController.createNote);
 app.get('/notes', authenticateToken, noteController.getNotes);
 
+// Delete note by id (protected)
+app.delete('/notes/:id', authenticateToken, noteController.deleteNote);
+
 module.exports = app;

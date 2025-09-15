@@ -29,11 +29,12 @@ A simple REST API built with Express.js for managing notes and viewing tasks. In
 3. Access Swagger docs at [http://localhost:3000/docs](http://localhost:3000/docs)
 
 ## Usage
-- **Login**: `POST /login` with `{ "username": "admin", "password": "password" }`
-- Use the returned token as `Bearer <token>` in the `Authorization` header for protected routes.
-- **Get Tasks**: `GET /tasks`
-- **Create Note**: `POST /notes` with `{ "content": "Your note" }`
-- **Get Notes**: `GET /notes`
+**Login**: `POST /login` with `{ "username": "admin", "password": "password" }`
+Use the returned token as `Bearer <token>` in the `Authorization` header for protected routes.
+**Get Tasks**: `GET /tasks`
+**Create Note**: `POST /notes` with `{ "content": "Your note" }`
+**Get Notes**: `GET /notes`
+**Delete Note**: `DELETE /notes/:id` (replace `:id` with the note's id)
 
 ## Notes
 - No user registration, consultation, or value transfer endpoints.

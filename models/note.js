@@ -6,4 +6,6 @@ class Note {
   }
 }
 
-module.exports = Note;
+const notes = [];
+
+module.exports = { Note, notes };
