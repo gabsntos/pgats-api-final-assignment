@@ -1,0 +1,11 @@
+[
+    {
+        "content": "A new note is born"
+    },
+    {
+        "content": "this note already exist"
+    },
+    {
+        "content": "ThisDoesNotMatterBecauseNoteServiceReturnIsMocked"
+    }
+]

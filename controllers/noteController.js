@@ -2,11 +2,15 @@ const noteService = require('../services/noteService');
 
 exports.createNote = (req, res) => {
   const { content } = req.body;
-  const result = noteService.addNote(content);
-  if (result.error) {
-    return res.status(400).json(result);
+  try {
+    const result = noteService.addNote(content);
+    if (result.error) {
+      return res.status(400).json(result);
+    }
+    res.status(201).json(result);
+  } catch (err) {
+    res.status(400).json({ error: err.message })
   }
-  res.status(201).json(result);
 };
 
 exports.getNotes = (req, res) => {

@@ -6,6 +6,8 @@ class Note {
   }
 }
 
-const notes = [];
+const notes = [
+  new Note(1, 'this note already exist')
+];
 
 module.exports = { Note, notes };
