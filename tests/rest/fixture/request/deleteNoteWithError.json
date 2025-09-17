@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Should return 400 error message Invalid note id",
+        "parameter": "xyz",
+        "expectedMessage": "Invalid note id."
+    },
+    {
+        "name": "Should return 400 error message Note not found",
+        "parameter": "9999",
+        "expectedMessage": "Note not found."
+    }
+]

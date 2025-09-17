@@ -4,7 +4,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "rest-controller-tests": "mocha \"tests/rest/controller/*test.js\" --timeout 10000"
+    "all-rest-tests": "mocha \"tests/rest/**/*test.js\" --timeout 10000",
+    "rest-controller-tests": "mocha \"tests/rest/controller/*test.js\" --timeout 10000",
+    "rest-external-tests": "mocha \"tests/rest/external/*test.js\" --timeout 10000"
   },
   "dependencies": {
     "express": "^4.21.2",

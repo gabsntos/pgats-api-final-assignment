@@ -86,32 +86,33 @@
             "description": "Unauthorized"
           }
         }
-      }
-      ,
-      "delete": {
-        "summary": "Delete a note by id (protected)",
-        "security": [{ "bearerAuth": [] }],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": { "type": "integer" },
-            "description": "ID of the note to delete"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Note deleted"
-          },
-          "404": {
-            "description": "Note not found"
-          },
-          "401": {
-            "description": "Unauthorized"
+  }
+      },
+      "/notes/{id}": {
+        "delete": {
+          "summary": "Delete a note by id (protected)",
+          "security": [{ "bearerAuth": [] }],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "schema": { "type": "integer" },
+              "description": "ID of the note to delete"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Note deleted"
+            },
+            "404": {
+              "description": "Note not found"
+            },
+            "401": {
+              "description": "Unauthorized"
+            }
           }
         }
-      }
     }
   },
   "components": {
