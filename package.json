@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "all-rest-tests": "mocha \"tests/rest/**/*test.js\" --timeout 10000",
+    "start-rest": "node server.js",
+    "start-graphql": "node graphql/server.js",
+    "all-rest-tests": "mocha \"tests/**/**/*test.js\" --timeout 10000",
     "rest-controller-tests": "mocha \"tests/rest/controller/*test.js\" --timeout 10000",
     "rest-external-tests": "mocha \"tests/rest/external/*test.js\" --timeout 10000"
   },
   "dependencies": {
+    "apollo-server-express": "^3.13.0",
     "express": "^4.21.2",
+    "graphql": "^16.11.0",
     "jsonwebtoken": "^9.0.2",
     "swagger-ui-express": "^4.6.3"
   },
