@@ -3,7 +3,7 @@ const { expect } = require('chai')
 
 const auth = require('../../authSetup')
 
-describe('taskExternal', () => {
+describe('taskExternalRest', () => {
 
     describe('GET /tasks', () => {
 

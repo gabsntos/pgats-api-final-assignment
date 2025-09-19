@@ -3,11 +3,11 @@ const { expect } = require('chai')
 
 const auth = require('../../authSetup')
 
-describe('noteExternal', () => {
+describe('noteExternalGraphql', () => {
 
     describe('GET /note', () => {
 
-        it.only('Should return a note alongside with its id', async () => {
+        it('Should return a note alongside with its id', async () => {
             const response = await request('http://localhost:4000')
                 .post('/graphql')
                 .set('Authorization', `Bearer ${auth.getToken()}`)

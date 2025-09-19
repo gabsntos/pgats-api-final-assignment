@@ -3,7 +3,7 @@ const { expect } = require('chai')
 
 const auth = require('../../authSetup')
 
-describe('noteExternal', () => {
+describe('noteExternalRest', () => {
 
     const deleteNoteWithError = require('../fixture/request/deleteNoteWithError.json')
 

@@ -1,0 +1,6 @@
+{
+    "query": "mutation DeleteNote($deleteNoteId: Int!) {deleteNote(id: $deleteNoteId) {message note {id content} error}}",
+    "variables": {
+        "deleteNoteId": 0
+    }
+}
