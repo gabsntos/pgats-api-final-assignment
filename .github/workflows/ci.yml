@@ -25,11 +25,20 @@ jobs:
     - name: Run rest-controller tests
       run: npm run rest-controller-tests
 
+    - name: Run graphql-resolvers tests
+      run: npm run graphql-resolvers-tests
+
     - name: Load REST API HTTP server
       run: npm start &
+
+    - name: Load graphql apollo server
+      run: npm run start-graphql &
 
     - name: Wait API to be loaded
       run: sleep 5
     
     - name: Run rest-external tests
       run: npm run rest-external-tests
+
+    - name: Run graphql-external tests
+      run: npm run graphql-external-tests
